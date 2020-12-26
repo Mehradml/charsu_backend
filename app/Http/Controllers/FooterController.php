@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Footer;
-
+require_once __DIR__.'/helpers.php';
 
 class FooterController extends Controller
 {

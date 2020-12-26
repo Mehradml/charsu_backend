@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Link;
+require_once __DIR__.'/helpers.php';
 
 
 class LinkController extends Controller
