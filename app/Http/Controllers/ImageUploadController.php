@@ -12,6 +12,6 @@ class ImageUploadController extends Controller
     {
         $imageName = time().'.'.$image->extension();
         $image->move(public_path('uploads'), $imageName);
-        return "http://localhost:8000/uploads/$imageName";
+        return "http://103.215.223.142:8000/uploads/$imageName";
     }
 }
