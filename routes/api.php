@@ -14,7 +14,9 @@ use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\IndexPageController;
+use App\Http\Controllers\FooterController;
 use App\Http\Controllers\HeaderSliderController;
+use App\Http\Controllers\LinkController;
 
 
 /*
@@ -63,6 +65,14 @@ Route::get('/course' , [CourseController::class , 'index']);
 Route::post('course' , [CourseController::class , 'store']);
 
 Route::delete('/course/{id}' , [CourseController::class , 'remove']);
+
+//link crud
+
+Route::get('/link' , [LinkController::class , 'index']);
+
+Route::post('link' , [LinkController::class , 'store']);
+
+Route::delete('/link/{id}' , [LinkController::class , 'remove']);
 
 //category crud
 
@@ -119,6 +129,13 @@ Route::delete('/message/{id}' , [MessageController::class , 'remove']);
 Route::get('/contact' , [ContactUsController::class , 'index']);
 
 Route::post('contact' , [ContactUsController::class , 'store']);
+
+
+//contact us page crud
+
+Route::get('/footer' , [FooterController::class , 'index']);
+
+Route::post('footer' , [FooterController::class , 'store']);
 
 
 //index us page crud
