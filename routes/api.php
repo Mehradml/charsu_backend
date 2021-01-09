@@ -15,6 +15,7 @@ use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\IndexPageController;
 use App\Http\Controllers\FooterController;
+use App\Http\Controllers\HeaderNavController;
 use App\Http\Controllers\HeaderSliderController;
 use App\Http\Controllers\LinkController;
 
@@ -131,11 +132,17 @@ Route::get('/contact' , [ContactUsController::class , 'index']);
 Route::post('contact' , [ContactUsController::class , 'store']);
 
 
-//contact us page crud
+//footer crud
 
 Route::get('/footer' , [FooterController::class , 'index']);
 
 Route::post('footer' , [FooterController::class , 'store']);
+
+//header nav crud
+
+Route::get('/nav' , [HeaderNavController::class , 'index']);
+
+Route::post('nav' , [HeaderNavController::class , 'store']);
 
 
 //index us page crud
